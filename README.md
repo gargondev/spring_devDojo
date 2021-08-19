@@ -1,5 +1,6 @@
 # Estudo Spring DevDojo
 
+
 > [-> Spring Boot 2 Essentials 01 - O que é Spring Boot](https://youtu.be/aspWYs8lp48https:/)
 
 * Objetivos Criar aplicações Standalone.
@@ -21,7 +22,7 @@
 * @GetMapping - Define uri no contesto do método exe @GetMapping(path = "app").
 * @ComponentScan - Define leitura do package de start exemplo @ComponentScan(basePackages = "start.aplication.app").
 
-[-> Spring Boot 2 Essentials 04 - @Component, @Autowired, @SpringBootApplication](https://www.youtube.com/watch?v=4sndRmKpMYI&list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H&index=5)
+> [-> Spring Boot 2 Essentials 04 - @Component, @Autowired, @SpringBootApplication](https://www.youtube.com/watch?v=4sndRmKpMYI&list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H&index=5)
 
 * Class Util.
 * @AutoWired - Utilizado para Realizar injeção de dependencias no Spring porem *** melhor maneira de se utilizar Injetando classe no construtor *.**
@@ -29,9 +30,14 @@
 * @AllArgsConstructor - Utilizado pelo Lombok para construção de construtores economiza linha de código.
 * @SpringBootApplication - utilizado na class main para start da aplicação Spring.
 
-[-> Spring Boot 2 Essentials 05 - Hot Swap com Spring Boot Devtools](https://www.youtube.com/watch?v=8W8t2yh8CD4&list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H&index=6)
+> [-> Spring Boot 2 Essentials 05 - Hot Swap com Spring Boot Devtools](https://www.youtube.com/watch?v=8W8t2yh8CD4&list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H&index=6)
 
 * Necessário adicionar dependencia devTools no Pon
 * Utilizado para restart da aplicação mais rapido quando aplicação em execução somente executar o build da aplicação novamente.
 
-[-> Spring Boot 2 Essentials 06 - Gerando projeto com start.spring.io](https://)
+> [-> Spring Boot 2 Essentials 06 - Gerando projeto com start.spring.io](https://www.youtube.com/watch?v=sZGw-evH0OE&list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H&index=7)
+
+* No video mostra como criar um projeto spring utilizando [https://start.spring.io/](https://start.spring.io/)
+* Eu estou utilizando VsCode e para criar um projeto Spring pelo VsCode
+  * Ctrl + Shift + P inicia spring initializer pela IDE.
+* Criado projeto learning_spring.
