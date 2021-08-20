@@ -1,13 +1,11 @@
 # Estudo Spring DevDojo
 
-
 > [-> Spring Boot 2 Essentials 01 - O que é Spring Boot](https://youtu.be/aspWYs8lp48https:/)
 
 * Objetivos Criar aplicações Standalone.
 * Inicio Rapido.
 * Servlets Container
 * Facilmente integrados em entre todas dependencias do projeto spring.
-
 
 > [-> Spring Boot 2 Essentials 02 - Criando projeto na pedreiragem pt 01](https://youtu.be/w8I7jWfUFLghttps:/)
 
@@ -41,3 +39,10 @@
 * Eu estou utilizando VsCode e para criar um projeto Spring pelo VsCode
   * Ctrl + Shift + P inicia spring initializer pela IDE.
 * Criado projeto learning_spring.
+
+[-> Spring Boot 2 Essentials 07 - Método GET parte 1](https://www.youtube.com/watch?v=ChstGsjYly0&list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H&index=8)
+
+* Criando Classe de Serviço pacote service.
+* Utilizando Lombok dentro do domain anotaçao @data.
+* Criado demonstração para uso futuro da camada repository.
+* Separando responsabilidades Service.
