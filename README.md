@@ -35,14 +35,22 @@
 
 > [-> Spring Boot 2 Essentials 06 - Gerando projeto com start.spring.io](https://www.youtube.com/watch?v=sZGw-evH0OE&list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H&index=7)
 
+* Branch git code video DevDojo [Get Here Code](https://github.com/devdojobr/springboot2-essentials/tree/video06)
 * No video mostra como criar um projeto spring utilizando [https://start.spring.io/](https://start.spring.io/)
 * Eu estou utilizando VsCode e para criar um projeto Spring pelo VsCode
   * Ctrl + Shift + P inicia spring initializer pela IDE.
 * Criado projeto learning_spring.
 
-[-> Spring Boot 2 Essentials 07 - Método GET parte 1](https://www.youtube.com/watch?v=ChstGsjYly0&list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H&index=8)
+> [-> Spring Boot 2 Essentials 07 - Método GET parte 1](https://www.youtube.com/watch?v=ChstGsjYly0&list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H&index=8)
 
+* Branch git code video DevDojo [Get Here Code](https://github.com/devdojobr/springboot2-essentials/tree/video07)
 * Criando Classe de Serviço pacote service.
 * Utilizando Lombok dentro do domain anotaçao @data.
 * Criado demonstração para uso futuro da camada repository.
 * Separando responsabilidades Service.
+
+> [-> Spring Boot 2 Essentials 08 - Método GET parte 2](https://www.youtube.com/watch?v=6ykxjpFrnJE&list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H&index=9)
+
+* Branch git code video DevDojo [Get Here Code](https://github.com/devdojobr/springboot2-essentials/tree/video08)
+* ResponseEntity é utilizado para manipular HTTP Response como código de retorno headers and body.
+* Alterado properties para yaml file manipulando informações de retorno.
