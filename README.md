@@ -49,8 +49,16 @@
 * Criado demonstração para uso futuro da camada repository.
 * Separando responsabilidades Service.
 
-> [-> Spring Boot 2 Essentials 08 - Método GET parte 2](https://www.youtube.com/watch?v=6ykxjpFrnJE&list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H&index=9)
+> [-> Spring Boot 2 Essentials 08 - Método GET parte 2](https://youtu.be/6ykxjpFrnJE)
 
 * Branch git code video DevDojo [Get Here Code](https://github.com/devdojobr/springboot2-essentials/tree/video08)
 * ResponseEntity é utilizado para manipular HTTP Response como código de retorno headers and body.
 * Alterado properties para yaml file manipulando informações de retorno.
+
+> [Spring Boot 2 Essentials 09 - Método POST](https://youtu.be/Mqw16-koH-8)
+
+* @PostMapping será mapeado automáticamente dentro do contesto da classe se houver apenas um post.
+* Por padrão a resposata será 201, e dependendo da aplicação podera retornar o objeto ou apenas o ID criado.
+* Essa requisição precisa receber um body.
+* Por padrão a requisição enviada será mapeada automaticamente se o nome do atributo na requisição for igual ao do objeto que estiver sendo mapeado, exemplo se houver no objeto propriedade nome na requisição devera vir como nome para setar mapeamento manual devemos utilizar @JsonProperty(nomevindo) no atributo da classe.
+* 
