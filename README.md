@@ -61,4 +61,20 @@
 * Por padrão a resposata será 201, e dependendo da aplicação podera retornar o objeto ou apenas o ID criado.
 * Essa requisição precisa receber um body.
 * Por padrão a requisição enviada será mapeada automaticamente se o nome do atributo na requisição for igual ao do objeto que estiver sendo mapeado, exemplo se houver no objeto propriedade nome na requisição devera vir como nome para setar mapeamento manual devemos utilizar @JsonProperty(nomevindo) no atributo da classe.
-* 
+* Testes realizados no método post com [App postman](https://www.postman.com/).
+
+> [ -> Spring Boot 2 Essentials 10 - Método DELETE
+](https://youtu.be/yHHV_sr_gsI)
+* Método delete implementado segue o mesmo padrão basicamento do find_by Id.
+* Código de Retorno correto para o Delete = 204.
+* Caso o Id informado não exista teremos o retorno de BadRequeste, o delete ficou implementado da seguinte maneira  @DeleteMapping(path = "/{id}");
+* O Método put e delete são [idempotente ](https://www.infoq.com/br/news/2013/05/idempotent/).
+
+> [-> Spring Boot 2 Essentials 11 - Método PUT
+](https://youtu.be/aJ43SfY8QKs)
+* Método também é idempotente que por definião é quando não importa a quantidade de vezes que repetimos o método a resposta deve ser a mesma.
+* Utilizado para update de dados na aplicação o put neste caso deve substituir todo objeto.
+* Método Put assinatura  @PutMapping public ResponseEntity<Void> replace(@RequestBody User user).
+
+
+

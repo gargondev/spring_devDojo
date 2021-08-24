@@ -38,5 +38,14 @@ public class UserService {
         users.add(user);
         return user;
     }
+
+    public void delete(long id) {
+        users.remove(findById(id));
+    }
+
+    public void replace(User user) {
+        delete(user.getId());
+        users.add(user);
+    }
     
 }
