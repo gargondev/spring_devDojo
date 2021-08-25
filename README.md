@@ -76,5 +76,16 @@
 * Utilizado para update de dados na aplicação o put neste caso deve substituir todo objeto.
 * Método Put assinatura  @PutMapping public ResponseEntity<Void> replace(@RequestBody User user).
 
+> [-> Spring Boot 2 Essentials 12 - Instalando Docker e executando container MySQL
+](https://youtu.be/ZPUC3wZgDoA)
+* Instalação e configuração docker com imagem mysql.
+* Criado dentro da pasta learning_spring docker-compose.yml start mysql docker-compose up
+
+> [-> Spring Boot 2 Essentials 13 - Spring Data JPA pt 01
+](https://youtu.be/npW5nkMQ6Vs)
+* Integração da aplicação com Banco de dados rodando no docker.
+* Adicionado JPA e Conector Mysql ao projeto via pom.
+* Adicionado Conector Mysql vi
+
 
 

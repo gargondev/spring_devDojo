@@ -1,3 +1,0 @@
-server:
-  error:
-    include-stacktrace: ON_PARAM
