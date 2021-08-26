@@ -3,6 +3,8 @@ package com.spring.devdojo.learning_spring.controller;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.spring.devdojo.learning_spring.Dto.UserPutRequestBody;
+import com.spring.devdojo.learning_spring.Dto.UserRequestPostBody;
 import com.spring.devdojo.learning_spring.domain.User;
 import com.spring.devdojo.learning_spring.service.UserService;
 import com.spring.devdojo.learning_spring.util.DateUtil;
@@ -38,20 +40,20 @@ public class UserController {
   
 
     @GetMapping
-    public List<User> list(){
+    public ResponseEntity<List<User>> list(){
         log.info(dateUtil.formatDateTimeToDataBaseStyle(LocalDateTime.now()));
-        return userService.listAll();
+        return ResponseEntity.ok(userService.listAll());
     }
     
 
     @GetMapping(path = "/{id}")
     public ResponseEntity<User> findById(@PathVariable long id){
-        return ResponseEntity.ok(userService.findById(id));
+        return ResponseEntity.ok(userService.findByIdOrThrowBadRequestException(id));
     }
 
     @PostMapping
-    public ResponseEntity<User> save(@RequestBody User user){
-        return new ResponseEntity<>(userService.save(user), HttpStatus.CREATED);
+    public ResponseEntity<User> save(@RequestBody UserRequestPostBody userRequestPostBody){
+        return new ResponseEntity<>(userService.save(userRequestPostBody), HttpStatus.CREATED);
     }
 
     @DeleteMapping(path = "/{id}")
@@ -61,8 +63,8 @@ public class UserController {
     }
 
     @PutMapping
-    public ResponseEntity<Void> replace(@RequestBody User user){
-        userService.replace(user);
+    public ResponseEntity<Void> replace(@RequestBody UserPutRequestBody userPutRequestBody){
+        userService.replace(userPutRequestBody);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

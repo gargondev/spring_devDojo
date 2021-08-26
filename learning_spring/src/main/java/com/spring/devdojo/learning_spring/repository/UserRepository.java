@@ -1,5 +1,8 @@
 package com.spring.devdojo.learning_spring.repository;
 
-public interface UserRepository {
+import com.spring.devdojo.learning_spring.domain.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
     
 }
