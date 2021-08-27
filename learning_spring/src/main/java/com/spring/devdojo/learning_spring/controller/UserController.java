@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.extern.log4j.Log4j2;
@@ -49,6 +50,11 @@ public class UserController {
     @GetMapping(path = "/{id}")
     public ResponseEntity<User> findById(@PathVariable long id){
         return ResponseEntity.ok(userService.findByIdOrThrowBadRequestException(id));
+    }
+
+    @GetMapping(path = "/find")
+    public ResponseEntity<List<User>> findByName(@RequestParam String name){
+        return ResponseEntity.ok(userService.findByName(name));
     }
 
     @PostMapping

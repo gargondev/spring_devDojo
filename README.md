@@ -98,6 +98,11 @@
 ](https://youtu.be/A9-Inky1Fjo)
 * Integração da ferramenta com MapStruct Mapeamento de Dados do DTO.
 * Artigo para [mapStruct](https://medium.com/mobicareofficial/mapstruct-simplificando-mapeamento-de-dtos-em-java-c29135835c68)
+
+> [-> Spring Boot 2 Essentials 16 - Request Params
+](https://youtu.be/juVa6LYSYKg)
+* Realizando a busca de dados por parametros na URL.
+* Exemplo de busca de parametros na url http://localhost:8080/users/find?name={string}
   
 
 
