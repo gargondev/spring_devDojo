@@ -94,5 +94,11 @@
 * Incluido DTO para método Put e Post do domain user.
 * Testado Get Post Delete Update no com postman com sucesso.
 
+> [-> Spring Boot 2 Essentials 15 - Framework de Mapeamento MapStruct
+](https://youtu.be/A9-Inky1Fjo)
+* Integração da ferramenta com MapStruct Mapeamento de Dados do DTO.
+* Artigo para [mapStruct](https://medium.com/mobicareofficial/mapstruct-simplificando-mapeamento-de-dtos-em-java-c29135835c68)
+  
+
 
 

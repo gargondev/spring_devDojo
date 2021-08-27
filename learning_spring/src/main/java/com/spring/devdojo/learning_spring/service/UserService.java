@@ -7,6 +7,7 @@ import java.util.List;
 import com.spring.devdojo.learning_spring.Dto.UserPutRequestBody;
 import com.spring.devdojo.learning_spring.Dto.UserRequestPostBody;
 import com.spring.devdojo.learning_spring.domain.User;
+import com.spring.devdojo.learning_spring.mapper.UserMapper;
 import com.spring.devdojo.learning_spring.repository.UserRepository;
 
 import org.springframework.http.HttpStatus;
@@ -33,9 +34,7 @@ public class UserService {
 
     public User save(UserRequestPostBody userRequestPostBody){
        
-        return userRepository
-                .save(User.builder()
-                .name(userRequestPostBody.getUser()).build());
+        return userRepository.save(UserMapper.INSTANCE.toUser(userRequestPostBody));
     }
 
     public void delete(long id) {
@@ -45,11 +44,8 @@ public class UserService {
     public void replace(UserPutRequestBody userPutRequestBody) 
     {
         User savedUser = findByIdOrThrowBadRequestException(userPutRequestBody.getId());
-        User user = User.builder()
-                    .id(savedUser.getId())
-                    .name(userPutRequestBody.getUser())
-                    .build();
-
+        User user = UserMapper.INSTANCE.toUser(userPutRequestBody);
+        user.setId(savedUser.getId());
         userRepository.save(user);
     }
     

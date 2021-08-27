@@ -6,6 +6,6 @@ import lombok.Data;
 public class UserPutRequestBody {
 
     private Long id;
-    private String user;
+    private String name;
     
 }
