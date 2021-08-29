@@ -103,6 +103,26 @@
 ](https://youtu.be/juVa6LYSYKg)
 * Realizando a busca de dados por parametros na URL.
 * Exemplo de busca de parametros na url http://localhost:8080/users/find?name={string}
+
+> [-> Spring Boot 2 Essentials 17 - Exceções Customizadas
+](https://youtu.be/1CJPEhgrxOU)
+* Criação excessões customizadas.
+* Criação pacote exception e classe BadRequestException.
+
+> [Spring Boot 2 Essentials 18 - Handler Global
+](https://youtu.be/TpXirJnXa-8)
+* Criação do Handler para manipulação de exceções global.
+
+> [Spring Boot 2 Essentials 19 - Transações
+](https://youtu.be/zYz6zt3SNMQ)
+* Implementação do @Transactional, realizar roolback da transação em caso de exceçãom de run time exception.
+* Obs, so é valido para banco de dados innoDB.
+
+> [Spring Boot 2 Essentials 20 - Validação de campos
+](https://youtu.be/fatUfpFROSo)
+* Adicionado Starter Validation no Pom.
+* Atraves das anotações @NotEmpty(message = "Name not be null or empty") @NotNull(message = "Name not be null")
+* Bloqueando vazio ou null.
   
 
 

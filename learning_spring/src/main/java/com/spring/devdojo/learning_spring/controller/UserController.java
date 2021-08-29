@@ -3,6 +3,8 @@ package com.spring.devdojo.learning_spring.controller;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import javax.validation.Valid;
+
 import com.spring.devdojo.learning_spring.Dto.UserPutRequestBody;
 import com.spring.devdojo.learning_spring.Dto.UserRequestPostBody;
 import com.spring.devdojo.learning_spring.domain.User;
@@ -58,7 +60,7 @@ public class UserController {
     }
 
     @PostMapping
-    public ResponseEntity<User> save(@RequestBody UserRequestPostBody userRequestPostBody){
+    public ResponseEntity<User> save(@RequestBody @Valid UserRequestPostBody userRequestPostBody){
         return new ResponseEntity<>(userService.save(userRequestPostBody), HttpStatus.CREATED);
     }
 

@@ -7,12 +7,12 @@ import java.util.List;
 import com.spring.devdojo.learning_spring.Dto.UserPutRequestBody;
 import com.spring.devdojo.learning_spring.Dto.UserRequestPostBody;
 import com.spring.devdojo.learning_spring.domain.User;
+import com.spring.devdojo.learning_spring.exception.BadRequestExcepetion;
 import com.spring.devdojo.learning_spring.mapper.UserMapper;
 import com.spring.devdojo.learning_spring.repository.UserRepository;
 
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
+import org.springframework.transaction.annotation.Transactional;
 
 import lombok.RequiredArgsConstructor;
 
@@ -33,9 +33,10 @@ public class UserService {
 
     public User findByIdOrThrowBadRequestException(long id){
         return  userRepository.findById(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST, "UserNot Found"));
+                .orElseThrow(() -> new BadRequestExcepetion("UserNot Found"));
     }
 
+    @Transactional
     public User save(UserRequestPostBody userRequestPostBody){
        
         return userRepository.save(UserMapper.INSTANCE.toUser(userRequestPostBody));
